@@ -1,9 +1,10 @@
 import React from "react"
+ import './App.css';
 
 function Welcome(props) {
   return (
-    <div>
-      <h1>New Component</h1>
+    <div className="welcome-mainContainer">
+      <h1>Hello Welcome</h1>
     </div>
   )
 }

@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+body {
+  padding: 0;
+  margin: 0;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+ .welcome-mainContainer {
+  height: 800px;
+ min-width: calc(100% - 300px);
+  background-color: #e08738;
+  float: left;
+  padding-left: 300px;
+  overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.navigation{
+ display: block;
+  position: fixed;
+  z-index: 1000;
+  height: 100vh;
+  width: 300px;
+  background-color: #945116;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navigation-inner {
+  /* center the unordered list vertically  */
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  min-height: 100%;
+  /* center the unordered list vertically  */
 }
 
-.App-link {
-  color: #61dafb;
+.navigation-inner >div{
+  text-align: right;
+  padding: 14px 0;
+  margin-right: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-item{
+  text-decoration: none;
+  text-transform: uppercase;
+  color: whitesmoke;
+  font-family: "Century Gothic";
+  font-weight: bold;
+  font-size: 0.8em;
+  opacity: 0.7;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-item:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  margin-right: 30px;
+  margin-top: 10px;
+  width: 60%;
+  height: 2px;
+  max-width: 0;
+  background-image: linear-gradient(to left, #ffa759, #1acab3);
+  transition: max-width 0.3s ease-out;
+}
+
+.nav-item:hover:after {
+  max-width: 100%;
+}
+
+.nav-item:hover {
+opacity: 1;
 }
