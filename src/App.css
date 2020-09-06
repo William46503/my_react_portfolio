@@ -1,20 +1,48 @@
 body {
   padding: 0;
   margin: 0;
-
 }
+/* --------------------------------Welcome---------------------- */
 
- .welcome-mainContainer {
-  height: 800px;
- min-width: calc(100% - 300px);
+.welcome-mainContainer {
+  height: 100vh;
+  min-width: calc(100% - 300px);
   background-color: #e08738;
   float: left;
   padding-left: 300px;
-  overflow-x: hidden;
+  position: relative;
+  overflow: hidden;
 }
 
-.navigation{
- display: block;
+.placeholder {
+  height: 400px;
+  width: 150px;
+  background: whitesmoke;
+  position: absolute;
+  top: 23%;
+  left: 30%;
+  -moz-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.placeholder:hover {
+  transform: translateX(-3px);
+  transform: translateY(-1px);
+  box-shadow: 3px 3px 5px black;
+}
+
+.titleText {
+  font-family: "Roboto", monospace;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+/* ---------------------------Navigation-bar----------------------------- */
+.navigation {
+  display: block;
   position: fixed;
   z-index: 1000;
   height: 100vh;
@@ -31,30 +59,33 @@ body {
   /* center the unordered list vertically  */
 }
 
-.navigation-inner >div{
+.navigation-inner a > li {
+  list-style: none;
   text-align: right;
-  padding: 14px 0;
+  padding: 10px 0;
+  margin-top: 20px;
   margin-right: 30px;
-}
-
-.nav-item{
-  text-decoration: none;
-  text-transform: uppercase;
-  color: whitesmoke;
-  font-family: "Century Gothic";
-  font-weight: bold;
-  font-size: 0.8em;
   opacity: 0.7;
   transition: all 0.3s ease-in-out;
 }
 
-.nav-item:after {
+.nav-item {
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: whitesmoke;
+  font-family: "Montserrat", "Century Gothic", sans-serif;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.nav-item::after {
   content: "";
   display: block;
   position: absolute;
   right: 0;
   margin-right: 30px;
-  margin-top: 10px;
   width: 60%;
   height: 2px;
   max-width: 0;
@@ -62,10 +93,32 @@ body {
   transition: max-width 0.3s ease-out;
 }
 
-.nav-item:hover:after {
+.nav-item:hover::after {
   max-width: 100%;
 }
 
-.nav-item:hover {
-opacity: 1;
+.navigation-inner a > li:hover {
+  opacity: 1;
+}
+
+/* ----------------------------------------*Footer---------------------------------------------*/
+
+.footer-mainContainer {
+  min-width: calc(100% - 300px);
+  background-color: rgb(148, 81, 22, 0.7);
+  height: 40px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer-mainContainer p {
+  color: #fff;
+  margin-right: 2%;
+  float: right;
+  font-size: 14px;
+  font-family: "Quicksand", sans-serif;
 }
