@@ -5,10 +5,11 @@ function Welcome(props) {
     <div className="welcome-mainContainer">
       {/* <img src="" alt="Picture of William" /> */}
       <span className="placeholder"></span>
-      <div className="titleText">
-        <h1>
-          William <br /> L.W. Lu
-        </h1>
+      <div className="titleText-Container">
+        <h1 className="titleName">William L.W. Lu</h1>
+        <div className="titleSubContent">
+          <h3>This is a test</h3>
+        </div>
       </div>
     </div>
   );
