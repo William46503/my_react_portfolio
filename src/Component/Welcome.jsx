@@ -1,10 +1,10 @@
 import React from "react";
 import ReactTyping from "./ReactTypingEffect";
-import "antd/dist/antd.css";
-import { Button } from 'antd';
+import { motion } from "framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLinkedin, faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 
-function Welcome(props) {
-
+function Welcome() {
   return (
     <div className="welcome-mainContainer">
       {/* <img src="" alt="Picture of William" /> */}
@@ -16,11 +16,27 @@ function Welcome(props) {
         </div>
       </div>
       <div className="buttonContainer">
-      <Button type="primary" size="large" className='urlButton'>Linkedin</Button>
-      <Button type="primary" size="large" className='urlButton'>Github</Button>
-    
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 1.5 }}
+          transition={{ ease: "easeOut" }}
+          className="urlButton"
+        >
+          <FontAwesomeIcon className="faIcon" icon={faLinkedin} />
+          LinkedIn
+        </motion.button>
+
+        <motion.button
+          whileHover={{ scale: 1.1 }}
+          whileTap={{ scale: 1.5 }}
+          transition={{ ease: "easeOut" }}
+          className="urlButton"
+        >
+          <FontAwesomeIcon className="faIcon" icon={faGithubSquare} />
+          Github
+        </motion.button>
       </div>
-     </div>
+    </div>
   );
 }
 

@@ -55,12 +55,78 @@ body {
   position: absolute;
   display: flex;
   top: 450px;
-  left: 100px;
+  left: 6em;
 }
 
 .urlButton{
   margin:0 15px;
-  width: 150px;
+  width: 200px;
+  background-color:transparent;
+    border: solid 1px !important;
+    border-color: rgba(41, 24, 0, 0.7) !important;
+    /* border-radius: 3em; */
+    color: #ffffff !important;
+    cursor: pointer;
+    font-size: 0.6em;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    height: calc(4.75em + 2px);
+    letter-spacing: 0.25em;
+    line-height: 4.75em;
+    outline: 0;
+    padding: 0 3.75em;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    white-space: nowrap;
+
+    transition:         0.08s ease-in;
+  -o-transition:      0.08s ease-in;
+  -ms-transition:     0.08s ease-in;
+  -moz-transition:    0.08s ease-in;
+  -webkit-transition: 0.08s ease-in;
+}
+
+
+
+.urlButton:before {
+  content: "";
+  position: absolute;
+  background: rgb(20, 20, 20);
+    /* border-radius: 3em; */
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  -webkit-transition: top 0.09s ease-in;
+}
+
+.urlButton:hover:before {
+  top: 0;
+}
+
+.urlButton:after{
+  content:"→";
+  position:absolute;
+  color:white;
+  font-size: 10px;
+  left: 83%;
+  opacity: 0;
+  -webkit-transition: all 250ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+}
+
+.urlButton:hover:after{
+  left:84%;
+  opacity:1;
+}
+
+
+.faIcon{
+  margin-right: 10px;
+  font-size: 3em;
+  vertical-align: middle;
 }
 
 /* ---------------------------Navigation-bar----------------------------- */
