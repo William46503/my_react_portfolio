@@ -2,8 +2,8 @@ import React from "react";
 import "../App.css";
 
 function Footer() {
-  let currentTime = new Date().toLocaleDateString();
-  const currentYear = currentTime.getFullYear;
+  const currentTime = new Date();
+  const currentYear = currentTime.getFullYear();
 
   return (
     <div className="footer-mainContainer">

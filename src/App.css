@@ -54,7 +54,7 @@ body {
 .buttonContainer{
   position: absolute;
   display: flex;
-  top: 450px;
+  top: 65%;
   left: 6em;
 }
 
@@ -203,10 +203,24 @@ body {
 
 .footer-mainContainer p {
   color: #fff;
+  margin: 0;
   margin-right: 2%;
   align-self: center;
   float: right;
+  display: flex;
   font-size: 12px;
+  padding: 0;
   font-family: "Quicksand", sans-serif;
   opacity: 0.8;
+}
+
+
+/* -----------------------my-work--------------- */
+.myworkimg{
+  height:100vh;
+  width:100%;
+  resize: both;
+  background-size: cover;
+  background-position:center;
+  background-repeat: no-repeat; 
 }

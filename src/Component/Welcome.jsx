@@ -16,25 +16,32 @@ function Welcome() {
         </div>
       </div>
       <div className="buttonContainer">
-        <motion.button
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 1.5 }}
-          transition={{ ease: "easeOut" }}
-          className="urlButton"
+        <a
+          target="_blank"
+          href="https://www.linkedin.com/in/william-l-w-lu-689167184/"
         >
-          <FontAwesomeIcon className="faIcon" icon={faLinkedin} />
-          LinkedIn
-        </motion.button>
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 1.5 }}
+            transition={{ ease: "easeOut" }}
+            className="urlButton"
+          >
+            <FontAwesomeIcon className="faIcon" icon={faLinkedin} />
+            LinkedIn
+          </motion.button>
+        </a>
 
-        <motion.button
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 1.5 }}
-          transition={{ ease: "easeOut" }}
-          className="urlButton"
-        >
-          <FontAwesomeIcon className="faIcon" icon={faGithubSquare} />
-          Github
-        </motion.button>
+        <a target="_blank" href="https://github.com/William46503">
+          <motion.button
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 1.5 }}
+            transition={{ ease: "easeOut" }}
+            className="urlButton"
+          >
+            <FontAwesomeIcon className="faIcon" icon={faGithubSquare} />
+            Github
+          </motion.button>
+        </a>
       </div>
     </div>
   );
