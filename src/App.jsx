@@ -18,7 +18,7 @@ function App() {
             <Route path="/project" component={Project} />
             <Route path="/about" component={About} />
           </Switch>
-          <Footer />
+          {/* <Footer /> */}
         </div>
       </div>
     </BrowserRouter>
