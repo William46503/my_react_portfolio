@@ -10,8 +10,10 @@ body {
 }
 
 .main-container {
-  background-color: #e08738;
-  background-image: url(./asset/arches.png);
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  
   display: flex;
   height: 100vh;
 }
@@ -21,6 +23,7 @@ body {
   display: flex;
   position: relative;
   height: 100vh;
+  
 }
 
 .titleText-Container {
@@ -62,7 +65,7 @@ body {
     border: solid 1px !important;
     border-color: rgba(41, 24, 0, 0.7) !important;
     /* border-radius: 3em; */
-    color: #ffffff !important;
+    color:#fff;
     cursor: pointer;
     font-size: 0.6em;
     font-weight: bold;
@@ -90,12 +93,12 @@ body {
 .urlButton:before {
   content: "";
   position: absolute;
-  background: rgb(20, 20, 20);
-    /* border-radius: 3em; */
+  background: rgba(20, 20, 20, 0.883);
   bottom: 0;
   left: 0;
   right: 0;
   top: 100%;
+
   z-index: -1;
   transition: top 0.09s ease-in;
 }
@@ -105,7 +108,7 @@ body {
 }
 
 .urlButton:after{
-  content:"→";
+  content:"➜";
   position:absolute;
   color:white;
   font-size: 10px;
@@ -117,13 +120,15 @@ body {
 .urlButton:hover:after{
   left:84%;
   opacity:1;
+  
 }
 
 
 .faIcon{
   margin-right: 10px;
-  font-size: 3em;
+  font-size: 3.5em;
   vertical-align: middle;
+
 }
 
 /* ---------------------------Navigation-bar----------------------------- */
@@ -233,17 +238,27 @@ body {
   object-position: center;
   width:100%;
   height: 100vh;
+
 }
-.category-item::before{
+.category-item picture::before{
   content: "";
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  background: rgb(69,69,69);
-background: linear-gradient(0deg, rgba(69,69,69,1) 0%, rgba(135,135,135,0.7511379551820728) 34%, rgba(203,203,203,0.40940126050420167) 63%, rgba(255,255,255,0) 100%);
-  opacity: 0.3;
+position: absolute;
+height: 100%;
+width: 100%;
+ background: #232526;  /* fallback for old browsers */
+ background: -webkit-linear-gradient(to right, #414345, #232526);  /* Chrome 10-25, Safari 5.1-6 */
+ background: linear-gradient(to right, #414345, #232526); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ 
+ opacity: 0.4;
+transition:all 1.0s;
 }
 
+.category-item picture:hover::before{
+  content: '';
+  opacity: 0;
+}
+
+/* container picture positions */
 .ci1{
   object-position: 80% 0%;
 }
@@ -261,66 +276,13 @@ background: linear-gradient(0deg, rgba(69,69,69,1) 0%, rgba(135,135,135,0.751137
   display: flex;
   bottom: 10%;
   background-color: rgba(207, 207, 207, 0.739);
+  
   width: 100%;
   height: 10%;
   font-size: 2rem;
   justify-content: center;
-
   margin: 0;
   padding: 20px;
 }
 
-/* 
-.category-title{
-  position: absolute;
-} */
-/* .category-item:after, .category-item:before {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  display: block;
-  content: "";
-}
 
-.category-item:before {
-    top: 0;
-    right: 0;
-    z-index: 2;
-    background: #010f2b;
-    opacity: .4;
-    transition: opacity .3s ease-in-out;
-} */
-
-
-
-/* 
-.project-top-container{
-  width: fit-content;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.project-img{
-  display: flex;
-}
-
-.project-top-container img{
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-  height: 100vh;
-}
-
-.project-top-container h2{
-  
-  position:absolute;
-  font-size: 2.5em;
-  bottom: 10%;
-  width: 100%;
-  padding: 30px 0;
-  display: flex;
-  justify-content: space-around;
-  margin-left: 20px;
-  background-color: rgb(255, 255, 255, 0.6);
-  
-} */
