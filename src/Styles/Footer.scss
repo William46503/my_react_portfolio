@@ -1,0 +1,26 @@
+// -----------------footer--------------------
+
+.footer-mainContainer {
+  // background-color: rgba(148, 81, 22, 0.7);
+  height: 40px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.footer-mainContainer p {
+  color: #fff;
+  margin: 0;
+  margin-right: 2%;
+  align-self: center;
+  float: right;
+  display: flex;
+  font-size: 12px;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+  opacity: 0.8;
+}

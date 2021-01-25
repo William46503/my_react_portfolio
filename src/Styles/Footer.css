@@ -1,0 +1,34 @@
+.footer-mainContainer {
+  height: 40px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+}
+
+.footer-mainContainer p {
+  color: #fff;
+  margin: 0;
+  margin-right: 2%;
+  -ms-flex-item-align: center;
+      align-self: center;
+  float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 12px;
+  padding: 0;
+  font-family: "Quicksand", sans-serif;
+  opacity: 0.8;
+}
+/*# sourceMappingURL=Footer.css.map */

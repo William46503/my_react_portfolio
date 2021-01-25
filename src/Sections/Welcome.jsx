@@ -1,5 +1,5 @@
 import React from "react";
-import ReactTyping from "./ReactTypingEffect";
+import ReactTyping from "../Component/ReactTypingEffect";
 import { motion } from "framer-motion";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedin, faGithubSquare } from "@fortawesome/free-brands-svg-icons";

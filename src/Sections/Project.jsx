@@ -1,6 +1,4 @@
 import React from "react";
-// import Project_head_container from "../Component/Project-head-container";
-// import Thumbnail from "./Thumbnail";
 
 function Project() {
   return (

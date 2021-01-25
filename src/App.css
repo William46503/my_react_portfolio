@@ -1,23 +1,8 @@
-@import '~antd/dist/antd.css';
-
-* {
-  margin: 0;
-  padding: 0;
-}
-body {
-  padding: 0;
-  margin: 0;
-}
-
-.main-container {
-  background-color: #e08738;
-  background-image: url(./asset/arches.png);
-  display: flex;
-  
-}
+@charset "UTF-8";
 /*-----------------------------Welcome---------------------- */
-
 .welcome-mainContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
   height: 100vh;
@@ -29,7 +14,6 @@ body {
   height: 200px;
   top: 30%;
   margin-left: 100px;
-
 }
 
 .titleName {
@@ -40,63 +24,63 @@ body {
   margin: 0;
   letter-spacing: 4px;
 }
+
 .titleSubContent {
   padding: 0;
   margin: 0;
   margin-left: 10px;
   font-size: 30px;
-
 }
 
-.buttonContainer{
+.buttonContainer {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   top: 65%;
   left: 6em;
 }
 
-.urlButton{
-  margin:0 15px;
+.urlButton {
+  margin: 0 15px;
   width: 200px;
-  background-color:transparent;
-    border: solid 1px !important;
-    border-color: rgba(41, 24, 0, 0.7) !important;
-    /* border-radius: 3em; */
-    color: #ffffff !important;
-    cursor: pointer;
-    font-size: 0.6em;
-    font-weight: bold;
-    font-family: "Montserrat", sans-serif;
-    height: calc(4.75em + 2px);
-    letter-spacing: 0.25em;
-    line-height: 4.75em;
-    outline: 0;
-    padding: 0 3.75em;
-    position: relative;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
-    white-space: nowrap;
-
-    transition:         0.08s ease-in;
-  -o-transition:      0.08s ease-in;
-  -ms-transition:     0.08s ease-in;
-  -moz-transition:    0.08s ease-in;
+  background-color: transparent;
+  border: solid 1px !important;
+  border-color: rgba(41, 24, 0, 0.7) !important;
+  /* border-radius: 3em; */
+  color: #ffffff !important;
+  cursor: pointer;
+  font-size: 0.6em;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  height: calc(4.75em + 2px);
+  letter-spacing: 0.25em;
+  line-height: 4.75em;
+  outline: 0;
+  padding: 0 3.75em;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transition: 0.08s ease-in;
+  -o-transition: 0.08s ease-in;
+  -ms-transition: 0.08s ease-in;
+  -moz-transition: 0.08s ease-in;
   -webkit-transition: 0.08s ease-in;
 }
-
-
 
 .urlButton:before {
   content: "";
   position: absolute;
-  background: rgb(20, 20, 20);
-    /* border-radius: 3em; */
+  background: #141414;
+  /* border-radius: 3em; */
   bottom: 0;
   left: 0;
   right: 0;
   top: 100%;
   z-index: -1;
+  -webkit-transition: top 0.09s ease-in;
   transition: top 0.09s ease-in;
 }
 
@@ -104,23 +88,23 @@ body {
   top: 0;
 }
 
-.urlButton:after{
-  content:"→";
-  position:absolute;
-  color:white;
+.urlButton:after {
+  content: "→";
+  position: absolute;
+  color: white;
   font-size: 10px;
   left: 83%;
   opacity: 0;
-  transition: all 250ms cubic-bezier(0.680, -0.550, 0.265, 1.550); 
+  -webkit-transition: all 250ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: all 250ms cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-.urlButton:hover:after{
-  left:84%;
-  opacity:1;
+.urlButton:hover:after {
+  left: 84%;
+  opacity: 1;
 }
 
-
-.faIcon{
+.faIcon {
   margin-right: 10px;
   font-size: 3em;
   vertical-align: middle;
@@ -128,7 +112,8 @@ body {
 
 /* ---------------------------Navigation-bar----------------------------- */
 .navigation {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: block;
   height: 100vh;
   width: 300px;
@@ -137,9 +122,16 @@ body {
 
 .navigation-inner {
   /* center the unordered list vertically  */
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   min-height: 100%;
   position: relative;
   /* center the unordered list vertically  */
@@ -152,6 +144,7 @@ body {
   margin-top: 15px;
   margin-right: 30px;
   opacity: 0.7;
+  -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
@@ -174,7 +167,9 @@ body {
   margin-right: 30px;
   max-width: 0;
   width: 70%;
+  background-image: -webkit-gradient(linear, right top, left top, from(#ffa759), to(#1acab3));
   background-image: linear-gradient(to left, #ffa759, #1acab3);
+  -webkit-transition: max-width 0.3s ease-out;
   transition: max-width 0.3s ease-out;
 }
 
@@ -186,17 +181,71 @@ body {
   opacity: 1;
 }
 
-/* ----------------------------------------*Footer---------------------------------------------*/
+/* -----------------------my-work--------------- */
+.main-head-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+
+.grid-parent {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+.project-top-container {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.project-img {
+  position: relative;
+}
+
+.project-top-container img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  height: 100vh;
+}
+
+.project-top-container h2 {
+  position: absolute;
+  font-size: 2.5em;
+  bottom: 10%;
+  width: 100%;
+  padding: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  /* margin-left: 20px; */
+  background-color: rgba(255, 255, 255, 0.6);
+}
 
 .footer-mainContainer {
-  background-color: rgb(148, 81, 22, 0.7);
   height: 40px;
   bottom: 0;
   right: 0;
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   width: 100%;
 }
 
@@ -204,8 +253,11 @@ body {
   color: #fff;
   margin: 0;
   margin-right: 2%;
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   float: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 12px;
   padding: 0;
@@ -213,46 +265,21 @@ body {
   opacity: 0.8;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+}
 
-/* -----------------------my-work--------------- */
+body {
+  padding: 0;
+  margin: 0;
+}
 
-.main-head-container{
+.main-container {
+  background-color: #e08738;
+  background-image: url(./asset/arches.png);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  height: 100vh;
-  position: relative;
 }
-
-.grid-parent{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  
-}
-.project-top-container{
-  width: fit-content;
-  
-}
-
-.project-img{
-  position: relative;
-}
-.project-top-container img{
-  width: 100%;
-  object-fit: cover;
-  object-position: center;
-  height: 100vh;
-}
-
-.project-top-container h2{
-  
-  position:absolute;
-  font-size: 2.5em;
-  bottom: 10%;
-  width: 100%;
-  padding: 30px 0;
-  display: flex;
-  justify-content: space-around;
-
-  /* margin-left: 20px; */
-  background-color: rgb(255, 255, 255, 0.6);
-  
-}
+/*# sourceMappingURL=App.css.map */
