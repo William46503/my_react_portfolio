@@ -1,4 +1,19 @@
-$primaryColor : white;
-$secondaryColor : darkblue;
-$textColorDark : black;
-$textColorLight : #efefef;
+$primaryColor : #ad2c34;
+$secondaryColor :  #dee2e3;
+$tertiaryColor : #284a70;
+$textColorDark : #2f2f30;
+$textColorLight : #ecf5e6;
+$textFont : 'Quicksand', sans-serif;
+$titleFont : 'Noto Serif', 'Quicksand', sans-serif;
+
+@mixin Center{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+@mixin pseudo($display: block, $pos: absolute, $content: ''){
+    content: $content;
+    display: $display;
+    position: $pos;
+}

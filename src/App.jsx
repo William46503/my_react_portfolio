@@ -1,9 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
-import Welcome from './Component/Welcome';
-import Navigation from './Component/Navigation';
-import './App.css';
+import Welcome from './Sections/Welcome';
+import Navigation from './Sections/Navigation';
+import './App.scss';
 
 function App() {
 	return (

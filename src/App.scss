@@ -2,25 +2,19 @@
 @import './Styles/Navbar.scss';
 @import './Styles/Project.scss';
 @import './Styles/Footer.scss';
+@import './Styles/Constant.scss';
 
 * {
   margin: 0;
   padding: 0;
 }
+
 body {
   padding: 0;
   margin: 0;
 }
 
 .main-container {
-  background-color: #e08738;
-  background-image: url(./asset/arches.png);
+  background-color: $secondaryColor;
   display: flex;
-  
 }
-
-
-
-
-
-

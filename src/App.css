@@ -110,17 +110,18 @@
   vertical-align: middle;
 }
 
-/* ---------------------------Navigation-bar----------------------------- */
+/* ---------------Navigation-bar----------------------------- */
 .navigation {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   display: block;
   height: 100vh;
   width: 300px;
-  background-color: #945116;
+  background-color: #dee2e3;
+  border-right: thin solid #ad2c34;
 }
 
-.navigation-inner {
+.navigation .navigation-inner {
   /* center the unordered list vertically  */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -137,25 +138,33 @@
   /* center the unordered list vertically  */
 }
 
-.navigation-inner a > li {
+.navigation .navigation-inner a > li {
   list-style: none;
   text-align: right;
   padding: 15px 0;
-  margin-top: 15px;
+  margin-top: 25px;
   margin-right: 30px;
   opacity: 0.7;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
 
+.navigation .navigation-inner a > li:hover {
+  opacity: 1;
+}
+
 .nav-item {
   letter-spacing: 2px;
   text-decoration: none;
   text-transform: uppercase;
-  color: whitesmoke;
-  font-family: "Montserrat", "Century Gothic", sans-serif;
+  color: #2f2f30;
+  font-family: 'Noto Serif', sans-serif;
   font-weight: bold;
-  font-size: 0.8em;
+  font-size: 1rem;
+}
+
+.nav-item:hover {
+  color: #ad2c34;
 }
 
 .nav-item::after {
@@ -165,20 +174,16 @@
   right: 0;
   height: 2px;
   margin-right: 30px;
-  max-width: 0;
-  width: 70%;
-  background-image: -webkit-gradient(linear, right top, left top, from(#ffa759), to(#1acab3));
-  background-image: linear-gradient(to left, #ffa759, #1acab3);
+  max-width: 0%;
+  width: 60%;
+  background-image: -webkit-gradient(linear, right top, left top, from(#ad2c34), to(#dee2e3));
+  background-image: linear-gradient(to left, #ad2c34, #dee2e3);
   -webkit-transition: max-width 0.3s ease-out;
   transition: max-width 0.3s ease-out;
 }
 
 .nav-item:hover::after {
   max-width: 100%;
-}
-
-.navigation-inner a > li:hover {
-  opacity: 1;
 }
 
 /* -----------------------my-work--------------- */
@@ -276,8 +281,7 @@ body {
 }
 
 .main-container {
-  background-color: #e08738;
-  background-image: url(./asset/arches.png);
+  background-color: #dee2e3;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
