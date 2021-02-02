@@ -24,6 +24,16 @@ function LinkButtons(props) {
 					</Button.Content>
 				</Button>
 			</a>
+			<a href="https://twitter.com/NextLvLPenguin" target="blank">
+				<Button className={props.buttonClass} size="huge" animated="fade">
+					<Button.Content hidden className={props.hiddenIcon}>
+						Twitter <Icon name="arrow alternate circle right outline" size="small" />
+					</Button.Content>
+					<Button.Content visible className={props.visibleIcon}>
+						<Icon name="twitter" size="large" />
+					</Button.Content>
+				</Button>
+			</a>
 		</div>
 	);
 }

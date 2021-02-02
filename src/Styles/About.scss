@@ -1,0 +1,13 @@
+@import "./Constant.scss";
+
+.about-mainContainer{
+   
+    width: 100vw;
+    height: 100vh;
+    background-color: #2f2f30 ;
+    .about-title{
+        font-size: 10rem;
+        color: $textColorLight;
+    }
+}
+

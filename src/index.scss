@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&family=Noto+Serif+JP:wght@300;400&family=Noto+Serif+TC:wght@300;600&family=Quicksand:wght@300;400;500&family=Roboto:wght@100;300;400;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Righteous&display=swap");
+@import './Styles/Constant.scss';
 
 body {
   margin: 0;
@@ -8,6 +9,23 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+
+    &::-webkit-scrollbar-track{
+      background-color: transparent;
+      width: 5px;
+      
+    }
+    &::-webkit-scrollbar{
+      width: 5px;
+      background-color: $secondaryColor;
+    }
+  
+    &::-webkit-scrollbar-thumb{
+      background-color:$textColorDark;
+      border-radius: 60px;
+    }
+  
 }
 
 code {

@@ -2,6 +2,7 @@
 @import './Styles/Navbar.scss';
 @import './Styles/Project.scss';
 @import './Styles/Footer.scss';
+@import './Styles/About.scss';
 @import './Styles/Constant.scss';
 
 * {
@@ -10,13 +11,8 @@
   box-sizing: border-box;
 }
 
-body {
-  padding: 0;
-  margin: 0;
-}
 
-.main-container {
-  background-color: $secondaryColor;
-  display: flex;
-
+.right-contrainer{
+  margin-left: 300px;
+  
 }

@@ -3,15 +3,17 @@
 /*-----------------------------Welcome---------------------- */
 
 .welcome-mainContainer {
-    display: block;
-    position: relative;
-    
+
+    height: 100vh;
+    min-width: 100vw;
+    background-color: $secondaryColor;
     .titleText-Container {
       position: absolute;
       display: block;
       width: 500px;
       height: 200px;
-      top: 30%;
+      top: 35%;
+    
       margin-left: 100px;
       .titleName {
         font-family: "Bebas Neue", cursive;
@@ -35,9 +37,10 @@
       position: absolute;
       display:flex;
       justify-content: space-evenly;
-      width: 500px;
+      min-width: 550px;
       top: 60%;
-      left: 3.5rem;
+      margin-left: 50px;
+      
       a{
         text-decoration: none;
         margin: 0;

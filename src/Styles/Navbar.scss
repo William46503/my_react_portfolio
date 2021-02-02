@@ -2,9 +2,8 @@
 
 /* ---------------Navigation-bar----------------------------- */
 .navigation {
-  box-sizing: border-box;
-  position: block;
-  display: block;
+  position: fixed;
+  
   height: 100vh;
   width: 300px;
   background-color: $secondaryColor;
