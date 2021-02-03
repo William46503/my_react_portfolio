@@ -1,13 +1,45 @@
 @import "./Constant.scss";
 
 .about-mainContainer{
-   
+   position: relative;
     width: 100vw;
     height: 100vh;
     background-color: #2f2f30 ;
     .about-title{
-        font-size: 10rem;
+        position: absolute;
+        margin-left: 50px;
+        bottom: 20px;
+        background-image: url('../asset/Evopicture.jpg');
+        background-size:cover ;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-size: 11rem;
         color: $textColorLight;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
+
+    .about-sub-section{
+        margin-left: 20px;
+        
+    }
+    .about-subContainer{
+        position: absolute;
+        top: 5%;
+        margin-left: 50px;
+        display: flex;
+        flex-direction: column;
+        font-family: $textFont;
+        color: $textColorLight;
+        h2{
+            font-size: 3rem;
+        }
+        // #bio{
+    //     position: absolute;
+    //     top: ;
+    // }
+    }
+
+    
 }
 
