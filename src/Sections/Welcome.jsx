@@ -1,7 +1,8 @@
 import React from 'react';
 import TitleText from '../Component/TitleText';
 import LinkButton from '../Component/LinkButton';
-// import '../Styles/Welcome.css';
+import TimeLine from '../Component/Timeline';
+import '../Styles/Welcome.css';
 
 function Welcome() {
 	return (
@@ -13,9 +14,9 @@ function Welcome() {
 				visibleIcon={'VisibleIcon'}
 				hiddenIcon={'HiddenIcon'}
 			/>
+			<TimeLine />
 		</div>
 	);
 }
 
 export default Welcome;
-
