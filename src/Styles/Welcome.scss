@@ -1,81 +1,80 @@
-@import './Constant.scss';
+@import "./Constant.scss";
 
 /*-----------------------------Welcome---------------------- */
 
 .welcome-mainContainer {
-	height: 100vh;
-	min-width: 100vw;
-	background-color: $secondaryColor;
-	.titleText-Container {
-		position: absolute;
-		display: block;
-		width: 500px;
-		height: 200px;
-		top: 35%;
+  height: 100vh;
+  min-width: 100vw;
+  background-color: $secondaryColor;
+  .titleText-Container {
+    position: absolute;
+    display: block;
+    width: 500px;
+    height: 200px;
+    top: 35%;
 
-		margin-left: 100px;
-		.titleName {
-			font-family: "Bebas Neue", cursive;
-			font-weight: 200;
-			font-size: 5em;
-			padding: 0;
-			margin: 0;
-			letter-spacing: 4px;
-		}
-		.titleSubContent {
-			padding: 0;
-			margin: 0;
-			margin-left: 10px;
-			font-size: 20px;
-		}
-	}
+    margin-left: 100px;
+    .titleName {
+      font-family: "Bebas Neue", cursive;
+      font-weight: 200;
+      font-size: 5em;
+      padding: 0;
+      margin: 0;
+      letter-spacing: 4px;
+    }
+    .titleSubContent {
+      padding: 0;
+      margin: 0;
+      margin-left: 10px;
+      font-size: 20px;
+    }
+  }
 
-	.LinkButtonContainer {
-		position: absolute;
-		display: flex;
-		justify-content: space-evenly;
-		min-width: 550px;
-		top: 60%;
-		margin-left: 60px;
+  .LinkButtonContainer {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    min-width: 550px;
+    top: 60%;
+    margin-left: 60px;
 
-		a {
-			text-decoration: none;
-			margin: 0;
-		}
+    a {
+      text-decoration: none;
+      margin: 0;
+    }
 
-		.ButtonClass {
-			width: 150px;
-			border-radius: 0%;
-			background-color: $secondaryColor;
-			box-shadow: 0 0 0 1px $textColorDark;
+    .ButtonClass {
+      width: 150px;
+      border-radius: 0%;
+      background-color: $secondaryColor;
+      box-shadow: 0 0 0 1px $textColorDark;
 
-			&:hover {
-				background-color: $textColorDark;
-			}
+      &:hover {
+        background-color: $textColorDark;
+      }
 
-			.VisibleIcon {
-				color: $textColorDark;
-			}
+      .VisibleIcon {
+        color: $textColorDark;
+      }
 
-			.HiddenIcon {
-				color: $textColorLight;
-			}
-		}
-	}
+      .HiddenIcon {
+        color: $textColorLight;
+      }
+    }
+  }
 
-  .timeline-container{
+  .timeline-container {
     height: 100vh;
     //The red line for the Timeline
-    .timeline{
+    .timeline {
       position: absolute;
       right: 30%;
       width: 1px;
       height: 100%;
       background-color: $primaryColor;
-
     }
     //A container to evenly spread dots on the timeline
-    .timeline-square-container{
+    .timeline-square-container {
       position: absolute;
       display: flex;
       flex-direction: column;
@@ -84,16 +83,16 @@
       right: 30%;
       height: 100%;
       width: 1px; //center with the timeline
-//Style individual sqaures
-      .timeline-square{
-      height: 20px;
-      width: 20px;
-      transform: rotate(45deg);
-      background-color: $textColorDark;
+      //Style individual squares
+      .timeline-square {
+        height: 20px;
+        width: 20px;
+        transform: rotate(45deg);
+        background-color: $textColorDark;
       }
     }
 
-    .content-container{
+    .content-container {
       position: absolute;
       display: flex;
       flex-direction: column;
@@ -101,6 +100,22 @@
       justify-content: space-evenly;
       right: 32%;
       height: 100%;
+      .content {
+        text-align: right;
+        .content-year {
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+        .content-title {
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+        .content-description {
+          float: right;
+          width: 70%;
+          margin-bottom: 0;
+        }
+      }
     }
   }
 }

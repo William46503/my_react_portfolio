@@ -1,39 +1,69 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 function TimeLine() {
-	return (
-		<div className="timeline-container">
-			<div className="timeline" />
-			<div className="timeline-square-container">
-				<div className="timeline-square" />
-				<div className="timeline-square" />
-				<div className="timeline-square" />
-				<div className="timeline-square" />
-				<div className="timeline-square" />
-				<div className="timeline-square" />
-			</div>
-			<div className="content-container">
-				<div className="content">
-					<h3 className="content-year">PRESENT</h3>
-				</div>
-				<div className="content">
-					<h3 className="content-year">2019</h3>
-				</div>
-				<div className="content">
-					<h3 className="content-year">2017</h3>
-				</div>
-				<div className="content">
-					<h3 className="content-year">2016</h3>
-				</div>
-				<div className="content">
-					<h3 className="content-year">2016</h3>
-				</div>
-				<div className="content">
-					<h3 className="content-year">2013</h3>
-				</div>
-			</div>
-		</div>
-	);
+  return (
+    <div className="timeline-container">
+      <div className="timeline" />
+      <div className="timeline-square-container">
+        <div className="timeline-square" />
+        <div className="timeline-square" />
+        <div className="timeline-square" />
+        <div className="timeline-square" />
+        <div className="timeline-square" />
+        <div className="timeline-square" />
+      </div>
+      <div className="content-container">
+        <div className="content">
+          <h4 className="content-year">PRESENT</h4>
+          <h3 className="content-title">Lead Career Advisor</h3>
+          <p className="content-description">
+            Leading the recruitment team to successful placement of foreign IT
+            Engineers
+          </p>
+        </div>
+        <div className="content">
+          <h4 className="content-year">2019</h4>
+          <h3 className="content-title">Lead Career Advisor</h3>
+          <p className="content-description">
+            Leading the recruitment team to successful placement of foreign IT
+            Engineers
+          </p>
+        </div>
+        <div className="content">
+          <h4 className="content-year">2017</h4>
+          <h3 className="content-title">
+            Kanda University of International Studies
+          </h3>
+          <p className="content-description">
+            Leading the recruitment team to successful placement of foreign IT
+            Engineers
+          </p>
+        </div>
+        <div className="content">
+          <h4 className="content-year">2016</h4>
+          <h3 className="content-title">SEGA, Tokyo Joypolis</h3>
+          <p className="content-description">
+            As an Amusement staff, I was responsible for customer service,
+            interpretation & complaint handling.
+          </p>
+        </div>
+        <div className="content">
+          <h4 className="content-year">2016</h4>
+          <h3 className="content-title">University in Bergen</h3>
+          <p className="content-description">
+            Graduated from UiB and started my adventure in Japan
+          </p>
+        </div>
+        <div className="content">
+          <h4 className="content-year">2013</h4>
+          <h3 className="content-title">To Bergen</h3>
+          <p className="content-description">
+            From the small town of Verdal, majoring in Japanese studies.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
 }
 
 export default TimeLine;
