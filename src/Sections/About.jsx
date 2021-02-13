@@ -1,10 +1,11 @@
 import React from 'react';
-import '../Styles/Constant.scss';
 
 function About(props) {
 	return (
 		<div className="about-mainContainer">
-			<h1 className="about-title">About Me</h1>
+			<h1 className="about-title " id="about-section">
+				About Me
+			</h1>
 			<div className="about-subContainer-left">
 				<section className="about-sub-section">
 					<h2 type="title">Who Am I</h2>
@@ -35,7 +36,7 @@ function About(props) {
 										<span role="img">🇯🇵</span> Japanese - Fluent
 									</li>
 									<li>
-										<span role="img">🇳🇴</span>Norwegian - Fluent
+										<span role="img">🇳🇴</span> Norwegian - Fluent
 									</li>
 								</ul>
 							</li>
@@ -53,7 +54,6 @@ function About(props) {
 					</p>
 				</section>
 			</div>
-			
 		</div>
 	);
 }

@@ -1,18 +1,30 @@
-@import './Styles/Welcome.scss';
-@import './Styles/Navbar.scss';
-@import './Styles/Project.scss';
-@import './Styles/Footer.scss';
-@import './Styles/About.scss';
-@import './Styles/Constant.scss';
+//HTML SCSS
+@import "./index.scss";
+
+//Navbar
+@import "./styles/Navbar.scss";
+
+//Welcome Section
+@import "./styles/Welcome.scss";
+@import "./styles/TitleText.scss";
+@import "./styles/LinkButton.scss";
+@import "./styles/Timeline.scss";
+
+//About section
+@import "./styles/About.scss";
+
+@import "./styles/Project.scss";
+@import "./styles/Footer.scss";
+
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 
 .right-contrainer{
   margin-left: 300px;
-  
 }

@@ -1,0 +1,60 @@
+@import "./Ultilities/Constant.scss";
+
+.timeline-container {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+
+	.content-container {
+		display: flex;
+		justify-content: space-evenly;
+		flex-direction: column;
+		position: absolute;
+		right: 25%;
+		height: 100vh;
+
+		&::after {
+			content: "";
+			position: absolute;
+			right: -28px;
+			width: 1px;
+			height: 100%;
+			background-color: $primaryColor;
+			z-index: 0;
+		}
+
+		.content {
+			text-align: right;
+			width: 400px;
+			.content-year {
+				margin-top: 0;
+				margin-bottom: 0;
+				font-size: 1.1rem;
+				font-family: $titleFont;
+				//the red line for timeline
+				&::after {
+					content: '';
+					position: absolute;
+					margin-top: 5px;
+					margin-left: 20px;
+					height: 15px;
+					width: 15px;
+					transform: rotate(45deg);
+					background-color: $textColorDark;
+					z-index: 1;
+				}
+			}
+			.content-title {
+				margin-top: 0;
+				margin-bottom: 2px;
+				font-size: 1.8rem;
+				font-family: $textFont;
+			}
+			.content-description {
+				display: inline;
+				font-family: $textFont;
+				margin: 0;
+			}
+		}
+	}
+}

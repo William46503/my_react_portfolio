@@ -1,9 +1,10 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { BrowserRouter } from 'react-router-dom';
 
 import Welcome from './Sections/Welcome';
 import Navigation from './Sections/Navigation';
 import About from './Sections/About';
+import 'semantic-ui-css/semantic.min.css';
 import './App.scss';
 
 function App() {
@@ -17,8 +18,6 @@ function App() {
 					<Welcome />
 					<About />
 				</div>
-
-				{/* <Footer /> */}
 			</div>
 		</BrowserRouter>
 	);

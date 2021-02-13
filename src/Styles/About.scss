@@ -1,4 +1,4 @@
-@import "./Constant.scss";
+@import "./Ultilities/Constant.scss";
 
 .about-mainContainer {
 	position: relative;
@@ -15,8 +15,8 @@
 		background-repeat: no-repeat;
 		background-position: center;
 		font-size: 11rem;
-		color: $textColorLight;
-		-webkit-background-clip: text;
+		// color: $textColorLight;
+		background-clip: text;
 		-webkit-text-fill-color: transparent;
 	}
 
@@ -37,10 +37,12 @@
 				margin-bottom: 0px;
 			}
 			.description {
+				font-family: $textFont;
 				font-size: 18px;
 				margin-top: 5px;
 				line-height: 2;
 				.categoryName {
+					font-family: $textFont;
 					font-weight: bolder;
 				}
 				.languageList {

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Button, Icon } from 'semantic-ui-react';
 
-function LinkButtons(props) {
+function LinkButton(props) {
 	return (
 		<div className={props.buttonContainerClass}>
 			<a href="https://www.linkedin.com/in/william-l-w-lu-689167184" target="blank">
@@ -37,4 +37,4 @@ function LinkButtons(props) {
 		</div>
 	);
 }
-export default LinkButtons;
+export default LinkButton;

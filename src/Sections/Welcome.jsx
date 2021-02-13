@@ -1,12 +1,12 @@
 import React from 'react';
 import TitleText from '../Component/TitleText';
-import LinkButton from '../Component/LinkButton';
 import TimeLine from '../Component/Timeline';
-import '../Styles/Welcome.css';
+import LinkButton from './../Component/LinkButton';
 
 function Welcome() {
 	return (
 		<div className="welcome-mainContainer">
+			<span id="top-section" />
 			<TitleText />
 			<LinkButton
 				buttonContainerClass={'LinkButtonContainer'}

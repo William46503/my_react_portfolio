@@ -1,0 +1,25 @@
+@import "./Ultilities/Constant.scss";
+
+.titleText-Container {
+    position: absolute;
+    display: block;
+    width: 500px;
+    height: 200px;
+    top: 35%;
+
+    margin-left: 100px;
+    .titleName {
+      font-family: "Bebas Neue", cursive;
+      font-weight: 200;
+      font-size: 5em;
+      padding: 0;
+      margin: 0;
+      letter-spacing: 4px;
+    }
+    .titleSubContent {
+      padding: 0;
+      margin: 0;
+      margin-left: 10px;
+      font-size: 20px;
+    }
+  }
