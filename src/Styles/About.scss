@@ -5,10 +5,13 @@
 	width: 100vw;
 	height: 100vh;
 	background-color: #2f2f30;
+	display: flex;
+	flex-direction: column;
+	align-content: flex-start;
+	flex-wrap: wrap;
 	.about-title {
 		position: absolute;
 		margin-left: 50px;
-
 		bottom: 20px;
 		background-image: url('../asset/Evopicture.jpg');
 		background-size: cover;
@@ -21,12 +24,9 @@
 	}
 
 	.about-subContainer-left {
-		position: absolute;
 		width: 450px;
-		top: 5%;
-		margin-left: 80px;
-		display: flex;
-		flex-direction: column;
+		flex: 1;
+		margin: 50px  150px;
 		font-family: $textFont;
 		color: $textColorLight;
 		.about-sub-section {
@@ -52,5 +52,33 @@
 			}
 		}
 	}
-
+	.about-subContainer-right {
+		width: 450px;
+		flex: 1;
+		margin: 50px auto;
+		font-family: $textFont;
+		color: $textColorLight;
+		.about-sub-section {
+			margin-left: 20px;
+			margin-bottom: 50px;
+			h2 {
+				font-size: 3rem;
+				margin-bottom: 0px;
+			}
+			.description {
+				font-family: $textFont;
+				font-size: 18px;
+				margin-top: 5px;
+				line-height: 2;
+				.categoryName {
+					font-family: $textFont;
+					font-weight: bolder;
+				}
+				.languageList {
+					list-style-type: none;
+					margin-left: 15px;
+				}
+			}
+		}
+	}
 }

@@ -22,9 +22,7 @@ function TimeLine() {
 				<div className="content">
 					<h4 className="content-year">2017.04 - 2019.04</h4>
 					<h3 className="content-title">Kanda University of International Studies</h3>
-					<p className="content-description">
-						Leading the recruitment team to successful placement of foreign IT Engineers
-					</p>
+					<p className="content-description">Master Degree in Linguistic with a focus on Semantic & Syntax</p>
 				</div>
 				<div className="content">
 					<h4 className="content-year">2016.09 - 2017.09</h4>
