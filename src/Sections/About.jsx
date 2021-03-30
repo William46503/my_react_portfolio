@@ -119,7 +119,7 @@ function About(props) {
 							</li>
 							<li>
 								<span className="categoryName">Programming(Learning):</span> JavaScript(React, Node),
-								Flutter, UE/C++, MaterialUI, SemanticUI
+								Flutter, Unity/C#, MaterialUI, SemanticUI
 							</li>
 							<li>
 								<span className="categoryName">Graphic Design:</span> AdobeXD, Photoshop, Gimp
