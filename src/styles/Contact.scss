@@ -1,52 +1,64 @@
-.contact-container{
+.contact-container {
     height: 100vh;
     background-color: $tertiaryColor;
     display: flex;
     flex-direction: column;
     align-items: center;
- 
-    h1{
-        margin: 0;
+    font-family: $titleFont;
+
+    h1 {
+        margin: 50px 40px 20px 40px;
+        font-family: $titleFont;
+        color: $textColorLight;
     }
 
-    .contact-my-info{
+    .contact-my-info {
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: space-between;
-        
-        section{
+        // justify-content: space-around;
+
+        section {
             display: flex;
-        flex-direction: column;
-        align-items: center;
-            margin: 2em 3em;
+            flex-direction: column;
+            align-items: center;
+            margin: 50px 30px;
+            font-family: $textFont;
+            color: $textColorLight;
+
+            p {
+                padding-top: 10px;
+            }
         }
     }
 
-    .form-container{
+    .form-container {
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        height: 80%;
-        width: 80%;
-        background: yellow;
-       
+        background-color: $secondaryColor;
+        border-radius: 10px;
+        padding: 30px 40px;
 
-        .general-input-wrapper{
+
+        .general-input-wrapper {
             display: flex;
             flex-direction: row;
-            justify-content: space-evenly;
-            align-items: space-evenly;        
+            justify-content: space-between;
+            align-items: space-between;
 
-            .general-input{
+
+            .general-input {
                 display: flex;
-                flex-direction:column;
+                flex-direction: column;
                 justify-content: flex-start;
+                padding-right: 30px;
+                justify-content: space-between;
             }
-            
+
         }
     }
-       
-    
+
+
 }
