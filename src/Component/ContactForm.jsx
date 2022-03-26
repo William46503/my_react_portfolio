@@ -1,5 +1,5 @@
 import React from "react";
-import { Form, Input } from "semantic-ui-react";
+import { Form, Input, TextArea } from "semantic-ui-react";
 
 function ContactForm() {
   return (
@@ -9,7 +9,7 @@ function ContactForm() {
         <Form.Input
           fluid
           label="Your Name"
-          placeholder="Jordan Smith"
+          placeholder="Jordon Smith"
           control={Input}
         />
         <Form.Input
@@ -21,7 +21,7 @@ function ContactForm() {
         <Form.Input label="Phone" placeholder="xxxxxxxxxxx" control={Input}/>
         </Form.Group>
        
-        <Form.TextArea className="message-input" label="Message" rows={10} placeholder='Your Message' />
+        <Form.TextArea label="Message" rows={10} placeholder='Your Message' />
       </Form.Group>
 
       <Form.Button className="submit-button">Talk to you soon!</Form.Button>
