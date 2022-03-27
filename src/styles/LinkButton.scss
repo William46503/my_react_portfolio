@@ -4,9 +4,16 @@
     position: absolute;
     display: flex;
     justify-content: space-evenly;
-    min-width: 550px;
+    width: 40%;
     top: 60%;
-    margin-left: 60px;
+    margin-left: 40px;
+
+    @media screen and (max-width: 789px) {
+      flex-direction: column;
+      left: 10%;
+      top: 80%;
+      
+    }
 
     a {
       text-decoration: none;
@@ -14,10 +21,12 @@
     }
 
     .ButtonClass {
-      width: 150px;
+      width: 120px;
       border-radius: 0%;
       background-color: $secondaryColor;
       box-shadow: 0 0 0 1px $textColorDark;
+      
+    
 
       &:hover {
         background-color: $textColorDark;

@@ -16,6 +16,10 @@
     min-height: 100%;
     position: relative;
     /* center the unordered list vertically  */
+
+    @media screen and (max-width: 789px) {
+      width: 240px;
+    }
   }
 
   .navigation-inner a>li {
