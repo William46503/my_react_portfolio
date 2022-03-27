@@ -1,44 +1,48 @@
 @import "./Ultilities/Constant.scss";
 
 .about-mainContainer {
-	position: relative;
-	width: 100vw;
-	height: 100vh;
-	background-color: #2f2f30;
 	display: flex;
-	flex-direction: column;
-	align-content: flex-start;
-	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	background-color: #2f2f30;
+	height: 100%;
+	position: relative;
+	padding: 100px 0;
+
+
 	.about-title {
 		position: absolute;
-		margin-left: 50px;
+		right: 5%;
 		bottom: 20px;
-		background-image: url('../asset/Evopicture.jpg');
+
+		background-image: url("../asset/images/Evopicture.jpg");
+		-webkit-background-clip: text;
+		background-clip: text;
+		color: transparent;
+		background-size: 900%;
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
-		font-size: 11rem;
-		// color: $textColorLight;
-		background-clip: text;
-		-webkit-text-fill-color: transparent;
+
+		font-size: 6rem;
 	}
 
 	.about-subContainer-left {
-		width: 450px;
-		flex: 1;
-		margin: 50px  150px;
+		width: 40%;
 		font-family: $textFont;
 		color: $textColorLight;
+
 		.about-sub-section {
 			margin-left: 20px;
 			margin-bottom: 50px;
 			h2 {
-				font-size: 3rem;
+				font-size: 2rem;
 				margin-bottom: 0px;
 			}
 			.description {
 				font-family: $textFont;
-				font-size: 18px;
+				font-size: 14px;
 				margin-top: 5px;
 				line-height: 2;
 				.categoryName {
@@ -53,21 +57,21 @@
 		}
 	}
 	.about-subContainer-right {
-		width: 450px;
-		flex: 1;
-		margin: 50px auto;
+		width: 40%;
 		font-family: $textFont;
 		color: $textColorLight;
+
+
 		.about-sub-section {
 			margin-left: 20px;
 			margin-bottom: 50px;
 			h2 {
-				font-size: 3rem;
+				font-size: 2rem;
 				margin-bottom: 0px;
 			}
 			.description {
 				font-family: $textFont;
-				font-size: 18px;
+				font-size: 14px;
 				margin-top: 5px;
 				line-height: 2;
 				.categoryName {
